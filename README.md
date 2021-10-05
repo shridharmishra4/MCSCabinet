@@ -56,24 +56,26 @@ For each session, cabinet trails have to follow below order in order for it to w
 
 
 #### Corner annotation : annotate_corners_v1.1.py
-
+```
 Usage: annotate_corners_v1.1.py <session_path>
 Requires: Side view videos in <session_path>/right
 Csv with co-ordinates of corners of cabinet in <session_path>/right
-
+```
 
 #### Bounding box annotation: bbox_annotation_using_points.py 
+
+```
 Usage: bbox_annotation_using_points.py <session_number>
 Requires: Top view videos in <session_path>/top
 Output: Csv with co-ordinates of corners of bbox in <session_path>/top
-
+```
 #### Heat map generation: heatmap_v3.py 
+
+```
 Usage: heatmap_v3.py <session_number>
-
 Requires: Corner and bounding box annotations in  <session_path>/right and  <session_path>/top respectively.
-
 Output: Heatmap videos, perspective transform matrix and heatmap pickle dump  in <session_path>/output
-
+```
 <!-- 
 ### Setup generic data
 
