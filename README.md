@@ -69,7 +69,9 @@ Output: Csv with co-ordinates of corners of bbox in <session_path>/top
 
 #### Heat map generation: heatmap_v3.py 
 Usage: heatmap_v3.py <session_number>
-Requires: Corner and bounding box annotations in  <session_path>/right and  <session_path>/top respectively
+
+Requires: Corner and bounding box annotations in  <session_path>/right and  <session_path>/top respectively.
+
 Output: Heatmap videos, perspective transform matrix and heatmap pickle dump  in <session_path>/output
 
 <!-- 
