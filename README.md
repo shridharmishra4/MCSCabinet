@@ -12,6 +12,7 @@ This repository contains the code for the hand-cabinet interaction.
 
 Run the following command to install the dependencies:
 Open terminal and type:
+
 ```
 python3 -m venv ./cabinet
 source ./cabinet/bin/activate
@@ -19,26 +20,32 @@ pip install -r requirements.txt
 ```
 
 #### Or using Conda
+
 ```
 conda env create -f label.yml
 ```
 
-
-
-
-<!-- ### Folder structure
+### Folder structure
 
 Here's a folder structure for the project:
 
 ```
-my-document/     # Root directory.
-|- build/        # Folder used to store builded (output) files.
-|- src/          # Markdowns files; one for each chapter.
-|- images/       # Images folder.
-|- metadata.yml  # Metadata content (title, author...).
-|- Makefile      # Makefile used for building our documents.
+MCSCabinet/     # Root directory.
+├── stage_1.sh # Runs corner and bounding box annotation tool, then runs heatmap generation code.
+├── annotate_corners_v1.1.py/        # Code used to annotate corenrs of cabinet
+├── bbox_annotation_using_points.py/          # Code used to annotate bounding box in top view
+├── heatmap_v3.py/       # Detects interation and generates heatmap
+├──./run.sh # runs correction pipeline
+├── jog_v3.py
+├── Import_Cabinets_Data.rb # ruby file for importing data
+├── README.md
+├── label.yml # env file for conda use: conda env create -f label.yml
+├── mock_cabinet.png
+├── requirements.txt # requirements file for virtual env
+├── run.sh
 ```
 
+<!-- 
 ### Setup generic data
 
 Edit the *metadata.yml* file to set configuration data:
